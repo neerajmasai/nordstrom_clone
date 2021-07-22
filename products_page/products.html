@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NordStrom|Products</title>
+    <link rel="stylesheet" href="products_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="products-container">
+        <div class="lft-container">
+            <img src="../img/chappal_product.jpeg" alt="chappal">
+            <img src="../img/chappal_product_2.jpeg" alt="chappal">
+            <img src="../img/chappal_product_3.jpeg" alt="chappal">
+            <img src="../img/chappal_product_4.jpeg" alt="chappal">
+            <img src="../img/chappal_product_5.jpeg" alt="chappal">
+        </div>
+        <div class="zoom-container"></div>
+        <div class="details-container">
+            <div class="ratings">
+                <span class="material-icons">
+                    star
+                 </span>
+                 <span class="material-icons">
+                    star
+                 </span>
+                 <span class="material-icons">
+                    star
+                 </span>
+                 <span class="material-icons">
+                    star
+                 </span>
+                 <span class="material-icons">
+                    star
+                 </span>
+            </div>
+            <div class="title">
+                <h2 id="productName" class="title-text">Vivi Slide Sandal<br><span id="productBrand" class="brands-text">CASLON</span></h2>
+            </div>
+            <div class="prices">
+                <h3><span style="color: red; font-size: medium;">INR</span><span id="main-price" class="main-price-text">23999</span><s class="strike-text">INR<span id="disc-price" class="disc-price-text">23999</span></s>40% off</h3>
+            </div>
+            <div class="description">
+                <p>Price varies with currency exchange rates and may be different than in store.</p>
+                <p>Wide leather straps crisscross atop this essential slide sandal furnished with a contoured, arch-supporting footbed that offers lasting comfort.</p>
+            </div>
+            <div class="sizes">
+                <p><b>Fit:</b> Runs large; order 1/2 size down.</p>
+                <div id="sizeDropdown" class="dropdown-content" onclick="toggleSizeDropdown()">
+                    <div class="options">
+                        <h4>Choose a size</h4>
+                        <p class="dropdown-options">Runs large; order 1/2 size down.</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="options">
+                        <h4 class="title-light">5</h4>
+                        <p class="dropdown-options">Not available in this combination.</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="options">
+                        <h4 class="title-light">5.5</h4>
+                        <p class="dropdown-options">Not available in this combination.</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="options">
+                        <h4 class="title-light">6.5</h4>
+                        <p class="dropdown-options">Available soon. Check back.</p>
+                    </div>
+                    <div class="options">
+                        <h4 class="title-light">8</h4>
+                        <p class="dropdown-options">Not available in this combination.</p>
+                    </div>
+                </div>
+                <div class="dropdown" onclick="toggleSizeDropdown()">
+                    <h4 id="dropdownText">Size</h4>
+                    <span id="dropdownIcon" class="material-icons">
+                        expand_more
+                    </span>
+                </div>
+                <a href="#" class="sizeAnchor">Size Guides</a>
+            </div>
+            <div class="colors">
+                <div id="colorDropdown" class="dropdown-content" onclick="toggleColorDropdown()">
+                    <div class="color-option-txt">
+                        <h4>Choose a color</h4>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="color-option-txt">
+                        <div class="option-color-outer"><div class="option-colors tangerine"></div></div>
+                        <p class="dropdown-options">Orange Tangerine</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="color-option-txt">
+                        <div class="option-color-outer"><div class="option-colors pink"></div></div>
+                        <p class="dropdown-options">Pink Light</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="color-option-txt">
+                        <div class="option-color-outer"><div class="option-colors yellow"></div></div>
+                        <p class="dropdown-options">Yellow Lemonade</p>
+                    </div>
+                    <hr class="dropdown-divider">
+                    <div class="color-option-txt">
+                        <div class="option-color-outer"><div class="option-colors black"></div></div>
+                        <p class="dropdown-options">Black</p>
+                    </div>
+                </div>
+                <div class="dropdown colorDropdown" onclick="toggleColorDropdown()">
+                    <h4 id="dropdownText">Black</h4>
+                    <span id="dropdownIcon" class="material-icons">
+                        expand_more
+                    </span>
+                </div>
+                <img src="../img/chappal_product_colors.JPG" alt="" class="colorBoxes">
+                <a href="" class="sizeAnchor peopleAnchor"><b>84</b> people are viewing</a>
+            </div>
+            <div class="cartbtn"></div>
+        </div>
+        <div class="rgt-container"></div>
+    </div>
+</body>
+<script src="products_main.js"></script>
+</html>
