@@ -1,11 +1,10 @@
 let annSale = document.querySelector("#annSale");
-    annSale.addEventListener("mouseover", dropDown);
-    annSale.addEventListener("mouseleave", dropDown2);
+annSale.addEventListener("mouseover", dropDown);
+annSale.addEventListener("mouseleave", dropDown2);
 
 let women = document.getElementById("women");
 women.addEventListener("mouseover", dropDownWomen);
 women.addEventListener("mouseleave", dropDownWomen2);
-
 
 let men = document.getElementById("men");
 men.addEventListener("mouseover", dropDownMen);
@@ -44,114 +43,111 @@ brand.addEventListener("mouseover", dropDownBrand);
 brand.addEventListener("mouseleave", dropDownBrand2);
 
 function dropDown() {
-    let dropMainContainer = document.querySelector(".dropMainContainer");
-    dropMainContainer.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer = document.querySelector(".dropMainContainer");
+  dropMainContainer.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDown2() {
-    let dropMainContainer = document.querySelector(".dropMainContainer");
-    dropMainContainer.style.display = "none";
-}   
-
-
+  let dropMainContainer = document.querySelector(".dropMainContainer");
+  dropMainContainer.style.display = "none";
+}
 
 function dropDownWomen() {
-    let dropMainContainer2 = document.querySelector(".dropMainContainer2");
-    dropMainContainer2.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer2 = document.querySelector(".dropMainContainer2");
+  dropMainContainer2.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDownWomen2() {
-    let dropMainContainer2 = document.querySelector(".dropMainContainer2");
-    dropMainContainer2.style.display = "none";
+  let dropMainContainer2 = document.querySelector(".dropMainContainer2");
+  dropMainContainer2.style.display = "none";
 }
-
 
 function dropDownMen() {
-    let dropMainContainer3 = document.querySelector(".dropMainContainer3");
-    dropMainContainer3.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer3 = document.querySelector(".dropMainContainer3");
+  dropMainContainer3.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDownMen2() {
-    let dropMainContainer3 = document.querySelector(".dropMainContainer3");
-    dropMainContainer3.style.display = "none";
+  let dropMainContainer3 = document.querySelector(".dropMainContainer3");
+  dropMainContainer3.style.display = "none";
 }
 
 function dropDownKids() {
-    let dropMainContainer4 = document.querySelector(".dropMainContainer4");
-    dropMainContainer4.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer4 = document.querySelector(".dropMainContainer4");
+  dropMainContainer4.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDownKids2() {
-    let dropMainContainer4 = document.querySelector(".dropMainContainer4");
-    dropMainContainer4.style.display = "none";
+  let dropMainContainer4 = document.querySelector(".dropMainContainer4");
+  dropMainContainer4.style.display = "none";
 }
 
 function dropDownWear() {
-    let dropMainContainer5 = document.querySelector(".dropMainContainer5");
-    dropMainContainer5.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer5 = document.querySelector(".dropMainContainer5");
+  dropMainContainer5.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDownWear2() {
-    let dropMainContainer5 = document.querySelector(".dropMainContainer5");
-    dropMainContainer5.style.display = "none";
+  let dropMainContainer5 = document.querySelector(".dropMainContainer5");
+  dropMainContainer5.style.display = "none";
 }
 
 function dropDownHome() {
-    let dropMainContainer6 = document.querySelector(".dropMainContainer6");
-    dropMainContainer6.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer6 = document.querySelector(".dropMainContainer6");
+  dropMainContainer6.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDownHome2() {
-    let dropMainContainer6 = document.querySelector(".dropMainContainer6");
-    dropMainContainer6.style.display = "none";
+  let dropMainContainer6 = document.querySelector(".dropMainContainer6");
+  dropMainContainer6.style.display = "none";
 }
 
 function dropDownGifts() {
-    let dropMainContainer7 = document.querySelector(".dropMainContainer7");
-    dropMainContainer7.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer7 = document.querySelector(".dropMainContainer7");
+  dropMainContainer7.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDownGifts2() {
-    let dropMainContainer7 = document.querySelector(".dropMainContainer7");
-    dropMainContainer7.style.display = "none";
+  let dropMainContainer7 = document.querySelector(".dropMainContainer7");
+  dropMainContainer7.style.display = "none";
 }
 
 function dropDownBeauty() {
-    let dropMainContainer8 = document.querySelector(".dropMainContainer8");
-    dropMainContainer8.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer8 = document.querySelector(".dropMainContainer8");
+  dropMainContainer8.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDownBeauty2() {
-    let dropMainContainer8 = document.querySelector(".dropMainContainer8");
-    dropMainContainer8.style.display = "none";
+  let dropMainContainer8 = document.querySelector(".dropMainContainer8");
+  dropMainContainer8.style.display = "none";
 }
 
 function dropDownSale() {
-    let dropMainContainer9 = document.querySelector(".dropMainContainer9");
-    dropMainContainer9.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer9 = document.querySelector(".dropMainContainer9");
+  dropMainContainer9.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDownSale2() {
-    let dropMainContainer9 = document.querySelector(".dropMainContainer9");
-    dropMainContainer9.style.display = "none";
+  let dropMainContainer9 = document.querySelector(".dropMainContainer9");
+  dropMainContainer9.style.display = "none";
 }
 
 function dropDownBrand() {
-    let dropMainContainer10 = document.querySelector(".dropMainContainer10");
-    dropMainContainer10.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer10 = document.querySelector(".dropMainContainer10");
+  dropMainContainer10.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDownBrand2() {
-    let dropMainContainer10 = document.querySelector(".dropMainContainer10");
-    dropMainContainer10.style.display = "none";
+  let dropMainContainer10 = document.querySelector(".dropMainContainer10");
+  dropMainContainer10.style.display = "none";
 }
 
 function dropDownDesigner() {
-    let dropMainContainer11 = document.querySelector(".dropMainContainer11");
-    dropMainContainer11.style.display = "inherit";
-    // alert("Im dropdown");
+  let dropMainContainer11 = document.querySelector(".dropMainContainer11");
+  dropMainContainer11.style.display = "inherit";
+  // alert("Im dropdown");
 }
 function dropDownDesigner2() {
-    let dropMainContainer11 = document.querySelector(".dropMainContainer11");
-    dropMainContainer11.style.display = "none";
+  let dropMainContainer11 = document.querySelector(".dropMainContainer11");
+  dropMainContainer11.style.display = "none";
 }
