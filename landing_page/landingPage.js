@@ -232,3 +232,17 @@ function dropDownDesigner2() {
     let dropMainContainer11 = document.querySelector(".dropMainContainer11");
     dropMainContainer11.style.display = "none";
 }
+
+//product dynamic functionality - neeraj
+function productPage(id){
+    /* stores id in local storage and updates selected value and redirects to product page*/
+
+    //update value
+    let selectedProduct = id;
+
+    //store in local storage
+    localStorage.setItem("selectedProduct", JSON.stringify(selectedProduct));
+
+    //redirect to product page
+    window.location.href = "../products_page/products.html";
+}
