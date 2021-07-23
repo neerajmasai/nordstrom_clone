@@ -5,8 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="checkout_style.css">
 </head>
 <body>
+
+    <header id="logo">
+        <nav>
+            <div class="logo_img">
+             <img src="logo.JPG" alt="">
+
+
+
+            </div>
+
+            <div class="icon">
+          <i class="fa fa-shopping-cart" "></i>
+
+
+            </div>
+           
+          
+
+         
+
+
+        
+           
+        </nav>
+    </header>
+
+    <div id="main_section">
+        <div class="checkout">
+            <h2>Checkout</h2>
+            <a style="color: blue; text-decoration: none;" href="">Edit Shopping Bag</a>
+            <h4>Pickup or delivery</h4>
+
+            <h4>Delivery only-pickup not available</h4>
+            <a style="color: blue;text-decoration: none;" href="">Change Shipping Speed</a>
+            <p style="color: #393939;">Free</p>
+
+            <div class="pro_img">
+
+                Neeraj will insert the image
+
+            </div>
+
+
+        </div>
+
+        <div class="order">
+            <h2>Review Order</h2>
+            <p class="Items">Your Items</p>
+            <p class="tax">Estimated Tax</p>
+
+
+            <p class="total">Estimated Total</p>
+            <button class="review_order">Review Order</button>
+            <p style="color: #393939;margin: 20px; line-height: 0;">Need help? Call at 1-800-526-2655</p>
+
+        </div>
+    </div>
+
+    <!-- Payment -->
+     <div id="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            
+            <div class="row">
+                <div class="col-50">
+                    <label  for="expmonth">Exp Month</label>
+            <input  type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                </div>
+              <div class="col-50">
+                <label  for="expyear">Exp Year</label>
+                <input  type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input  type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input style="margin-left: 200px; margin-top: 20px;" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+ 
+</div>
     
 </body>
 </html>

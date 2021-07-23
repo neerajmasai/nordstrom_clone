@@ -42,7 +42,7 @@ body {
 .india {
   float: right;
   display: flex;
-  margin-right: 30px;
+  margin-right: 80px;
 }
 .india > img {
   height: 20px;
@@ -55,6 +55,7 @@ body {
 .india > p {
   font-size: 14px;
   padding-top: 3px;
+  margin-top: 15px;
 }
 .header2 {
   height: 80px;
