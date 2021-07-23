@@ -75,7 +75,7 @@ let catDiv1 = document.querySelector("#catDiv1");
 catDiv1.addEventListener("click", shopByMen);
 
 function shopByMen() {
-    window.location.href = "../products_page/products.html";
+    window.location.href = "../shop_by_category/shop_Category.html";
 }
 
 
