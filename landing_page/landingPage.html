@@ -1,24 +1,72 @@
+<!-- <i class="fab fa-twitter"></i> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NordStrom|Products</title>
-    <link rel="stylesheet" href="products_style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+    <title>Nordstrom Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="landingPage.css">
 </head>
 <body>
-    <!-- Navbar -->
+    <div class="homeShipDiv">
+        <img class="shipCross" src="images/cross.PNG" />
+        <div class="homeShipSubDiv">
+            <div class="shipLeftDiv">
+                <p>We ship internationally</p>
+                <p>Nordstrom ships to over 200 countries/regions worldwide through our delivery partner Borderfree.</p>
+                <p>Ship to</p>
+                <select id="country">
+                    <option>India</option>
+                    <option>Phillipines</option>
+                    <option>Sri Lanka</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                </select>
+                <p class="shipShopText">Shop in</p>
+                <select id="shipCurrency">
+                    <option>Indian Rupee (INR)</option>
+                    <option>Phillipine Peso (PHP)</option>
+                    <option>Sri Lanka Rupee (LKR)</option>
+                    <option>British Pound (GBP)</option>
+                    <option>US Dollars (USD)</option>
+                </select>
+                <p class="shipUSAdd">Or <button>ship to a U.S. address</button></p>
+                <div class="saveButtonDiv">
+                    <button>Save</button>
+                    <button>Cancel</button>
+                </div>
+            </div>
+            <div class="shipRightDiv">
+                <p>A few things to know: </p>
+                <ul>
+                    <li>Prices and payment are shown in your local currency.</li>
+                    <li>International shipping costs are based on your items, shipping method and destination.</li>
+                    <li>All taxes and duties are prepaid and shown at Checkout - there are no surprise charges at delivery!</li>
+                </ul>
+                <p class="lastSecondText">Shipping to Canada? <span class="spanClass">Shop on Nordstrom.ca</span> to get duty-free
+                    purchases in
+                    Canadian currency and free Standard Shipping.
+                    Borderfree is not available for Canada.
+                </p>
+                <p class="lastShipText">Questions about International shipping? <span class="spanClass">Get more details</span> or
+                    <span class="spanClass">contact us.</span></p>
+            </div>
+        </div>
+    </div>
     <div id="headerDiv">
         <div class="header1">
-            <p><span class="saleSpan">Preview Anniversary Sale! </span>Build your Wish List now - sale starts July 28. <button class="previewButton">Preview the sale</button></p>
+            <p><span class="saleSpan">Preview Anniversary Sale! </span>Build your Wish List now - sale starts July 28.
+                <button class="previewButton">Preview the sale</button></p>
             <div class="india">
-                <img src="https://n.nordstrommedia.com/alias/IN.gif"/>
+                <img src="https://n.nordstrommedia.com/alias/IN.gif" />
                 <p>India</p>
             </div>
         </div>
@@ -43,7 +91,7 @@
             </div>
             <div class="navRight">
                 <div class="search">
-                    <img src="images/outline_search_black_24dp.png"/>
+                    <img src="images/outline_search_black_24dp.png" />
                     <p>Search</p>
                 </div>
                 <select name="sign in" id="signIn">
@@ -964,145 +1012,212 @@
             </div>
         </div>
     </div>
-    <!-- end -->
-    <div class="products-container">
-        <div class="lft-container">
-            <img id="img1" src="images/chappal_product.jpeg" alt="chappal">
-            <img id="img2"src="images/chappal_product_2.jpeg" alt="chappal">
-            <img src="images/chappal_product_3.jpeg" alt="chappal">
-            <img id="img3" src="images/chappal_product_4.jpeg" alt="chappal">
-            <img id="img4"src="images/chappal_product_5.jpeg" alt="chappal">
-        </div>
-        <div id="zoomerImg" class="zoom-container"></div>
-        <div class="details-container">
-            <div id="ratings" class="ratings">
+    <div class="headerDiv3">
+        <p>Pick Up Today - in Store or Curbside</p>
+        <p>Set Your Store</p>
+    </div>
+    <div class="body1">
+        <img src="images/bodyImage1.jpeg">
+        <img src="images/apply.PNG">
+    </div>
+    <div id="carosol1"></div>
+    <p class="previewText">Sale starts July 28. <button>Preview the sale now</button></p>
+    <div id="carosol2"></div>
+    <div class="greatDeals">
+        <h2>Great deals on popular items</h2>
+        <div class="greatDealImgs slider">
+            <div onclick="productPage(0)">
+                <img src="images/chappals2.PNG" />
             </div>
-            <div class="title">
-                <h2 id="productName" class="title-text">Vivi Slide Sandal<br></h2>
-                <span id="productBrand" class="brands-text">CASLON</span>
+            <div onclick="productPage(1)">
+                <img src="images/charlesHenry.PNG"/>
             </div>
-            <div class="prices">
-                <h3><span style="color: red; font-size: medium;">INR</span><span id="mainPrice" class="main-price-text">23999</span><s class="strike-text">INR<span id="discPrice" class="disc-price-text">23999</span></s><span id="discPercent">40% off</span></h3>
+            <div onclick="productPage(2)">
+                <img src="images/chappals3.PNG"/>
             </div>
-            <div id="description" class="description">
-                <p id="descP1">Price varies with currency exchange rates and may be different than in store.</p>
-                <p id="descP2">Wide leather straps crisscross atop this essential slide sandal furnished with a contoured, arch-supporting footbed that offers lasting comfort.</p>
+            <div onclick="productPage(3)">
+                <img src="images/chappals4.PNG"/>
             </div>
-            <div class="sizes">
-                <p><b>Fit:</b> Runs large; order 1/2 size down.</p>
-                <div id="sizeDropdown" class="dropdown-content" onclick="toggleSizeDropdown()">
-                    <div class="options">
-                        <h4>Choose a size</h4>
-                        <p class="dropdown-options">Runs large; order 1/2 size down.</p>
-                    </div>
-                    <hr class="dropdown-divider">
-                    <div class="options">
-                        <h4 class="title-light">5</h4>
-                        <p class="dropdown-options">Not available in this combination.</p>
-                    </div>
-                    <hr class="dropdown-divider">
-                    <div class="options">
-                        <h4 class="title-light">5.5</h4>
-                        <p class="dropdown-options">Not available in this combination.</p>
-                    </div>
-                    <hr class="dropdown-divider">
-                    <div class="options">
-                        <h4 class="title-light">6.5</h4>
-                        <p class="dropdown-options">Available soon. Check back.</p>
-                    </div>
-                    <hr class="dropdown-divider">
-                    <div class="options">
-                        <h4 class="title-light">8</h4>
-                        <p class="dropdown-options">Not available in this combination.</p>
-                    </div>
-                </div>
-                <div class="dropdown" onclick="toggleSizeDropdown()">
-                    <h4 id="dropdownText">Size</h4>
-                    <span id="dropdownIcon" class="material-icons">
-                        expand_more
-                    </span>
-                </div>
-                <a href="#" class="sizeAnchor">Size Guides</a>
+            <div onclick="productPage(4)">
+                <img src="images/Bp.PNG"/>
             </div>
-            <div class="colors">
-                <div id="colorDropdown" class="dropdown-content" onclick="toggleColorDropdown()">
-                    <div class="color-option-txt">
-                        <h4>Choose a color</h4>
-                    </div>
-                    <hr class="dropdown-divider">
-                    <div class="color-option-txt">
-                        <div class="option-color-outer"><div class="option-colors tangerine"></div></div>
-                        <p class="dropdown-options">Orange Tangerine</p>
-                    </div>
-                    <hr class="dropdown-divider">
-                    <div class="color-option-txt">
-                        <div class="option-color-outer"><div class="option-colors pink"></div></div>
-                        <p class="dropdown-options">Pink Light</p>
-                    </div>
-                    <hr class="dropdown-divider">
-                    <div class="color-option-txt">
-                        <div class="option-color-outer"><div class="option-colors yellow"></div></div>
-                        <p class="dropdown-options">Yellow Lemonade</p>
-                    </div>
-                    <hr class="dropdown-divider">
-                    <div class="color-option-txt">
-                        <div class="option-color-outer"><div class="option-colors black"></div></div>
-                        <p class="dropdown-options">Black</p>
-                    </div>
-                </div>
-                <div class="dropdown colorDropdown" onclick="toggleColorDropdown()">
-                    <h4 id="dropdownText">Black</h4>
-                    <span id="dropdownIcon" class="material-icons">
-                        expand_more
-                    </span>
-                </div>
-                <img src="images/chappal_product_colors.JPG" alt="" class="colorBoxes">
-                <a href="" class="sizeAnchor peopleAnchor"><b>84</b> people are viewing</a>
+            <div onclick="productPage(5)">
+                <img src="images/chappals2.PNG" />
             </div>
-            <div class="cartbtn">
-                <button><span id="bagIcon" class="material-icons">work</span>Add to Bag</button>
+            <div onclick="productPage(6)">
+                <img src="images/flipFlop.PNG" />
             </div>
-            <div class="wishlist">
-                <span id="addIcon" class="material-icons">add</span>
-                <a href="">Add to Wish List</a>
+            <div onclick="productPage(7)">
+                <img src="images/downSlider5.PNG" />
             </div>
-        </div>
-        <div class="rgt-container">
-            <h3>You might also like</h3>
-            <img class="rcmd-img" src="images/rcmd_1.jpeg" alt="">
-            <img class="rcmd-img" src="images/rcmd_4.jpg" alt="">
-            <img class="rcmd-img" src="images/rcmd_1.jpeg" alt="">
-            <img class="rcmd-img" src="images/rcmd_3.jpeg" alt="">
+            <div onclick="productPage(8)">
+                <img src="images/pants.PNG" />
+            </div>
+            <div onclick="productPage(9)">
+                <img src="images/pink1.PNG" />
+            </div>
         </div>
     </div>
-    <div class="info-container">
-        <div class="info-left">
-            <h1>SIZE INFO</h1>
-            <ul>
-                <li>Runs large; order 1/2 down.</li>
-            </ul>
-            <br><br>
-            <h1>DETAILS & CARE</h1>
-            <p>Wide leather straps crisscross atop this essential slide sandal furnished with a contoured, arch-supporting footbed that offers lasting comfort.</p>
-            <ul>
-                <li>Contoured footbed</li>
-                <li>Leather upper/synthetic lining/rubber sole</li>
-                <li>Women's Shoes</li>
-                <li>Item #6156672</li>
-            </ul>
-            <br><br>
-            <h3>Helpful info:</h3>
-            <a href="">How to Measure Heel Heights</a>
-            <a href="">See details and tips from a salesperson (video)</a>
-            <br><br>
-            <p><b>Free Shipping & Returns</b><a href=""> See more</a><p>
+    <div class="freeStyleDiv">
+        <div>
+            <img src="images/freeStyle.jpeg" />
+            <div class="freeStyleTextDiv">
+                <p>Our stylists can help you explore and shop Anniversary Sale in stores or virtually.</p>
+                <button>Book a Free Appointment</button>
+            </div>
         </div>
-        <div class="info-right">
-            <h1><a href="" id="brand2">CASLON</a></h1>
-            <p>Eased-up and effortless. Travel-ready—but totally down for everyday. Caslon's collection of modern essentials, available exclusively at Nordstrom, keeps the attitude relaxed with ultrawearable silhouettes and natural fibers. Everything in life should be this easy.</p>
+        <div>
+            <img src="images/saleEvent.jpeg" />
+            <div class="freeStyleTextDiv2">
+                <p>We have free styling events online and in stores - plus restaurant specials, livestreams and more.</p>
+                <button>See Our Anniversary EVents</button>
+            </div>
         </div>
     </div>
-    <!-- footer -->
+    <div class="mickey">
+        <div class="mickeyDivs">
+            <img src="images/mickey.jpeg" />
+            <div class="mickeyText">
+                <p>July 23 - September 12</p>
+                <p>Celebrate friendship with a handpicked and custom-made Disney Mickey & Friends collection.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="mickeyDivs">
+            <img src="images/necklace.jpeg" />
+            <div class="mickeyText">
+                <p>David Yurman</p>
+                <p>Featuring hand-set diamonds in luminescent sterling silver - exclusively here.</p>
+                <button>David Yurman</button>
+            </div>
+        </div>
+        <div class="mickeyDivs">
+            <img src="images/dining.jpeg" />
+            <div class="mickeyText">
+                <p>Summer Soirees Made Easy</p>
+                <p>Perfect your outdoor dining oasis with picks from LSA, Five Two by Food52 and more.</p>
+                <div class="diningButtons">
+                    <button>All Home</button>
+                    <button>Outdoor Dining</button>
+                    <button>Tabletop</button>
+                    <button>Kitchen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="orangeDiv">
+        <p>DESIGNER CLEARANCE</p>
+        <p>UPTO 70% OFF</p>
+        <p>From the best brands of the season. <button>Designer Sale</button></p>
+    </div>
+    <div class="categoryDiv">
+        <h2>SHOP BY CATEGORIES</h2>
+        <div class="catDivs">
+            <div class="catDiv1">
+                <img src="images/review.PNG"/>
+                <p>Preview Anniversary Sale</p>
+            </div>
+            <div class="catDiv1">
+                <img src="images/women.PNG" />
+                <p>Shop Women</p>
+            </div>
+            <div class="catDiv1">
+                <img src="images/bag.PNG" />
+                <p>Shop Designer</p>
+            </div>
+            <div class="catDiv1" id="catDiv1">
+                <img src="images/shopMen.PNG" />
+                <p>Shop Men</p>
+            </div>
+            <div class="catDiv1">
+                <img src="images/shopKids.PNG" />
+                <p>Shop Kids</p>
+            </div>
+            <div class="catDiv1">
+                <img src="images/shopBeauty.PNG" />
+                <p>Shop Beauty & Fragrance</p>
+            </div>
+        </div>
+    </div>
+    <div class="greatDeals">
+        <h2>Best-selling items</h2>
+        <div class="greatDealImgs slider">
+            <div>
+                <img src="images/downSlider1.PNG"/>
+            </div>
+            <div>
+                <img src="images/downSlider2.PNG"/>
+            </div>
+            <div>
+                <img src="images/downSlider3.PNG"/>
+            </div>
+            <div>
+                <img src="images/downSlider4.PNG"/>
+            </div>
+            <div>
+                <img src="images/downSlider5.PNG"/>
+            </div>
+            <div>
+                <img src="images/downSlider6.PNG" />
+            </div>
+            <div>
+                <img src="images/downSlider7.PNG" />
+            </div>
+            <div>
+                <img src="images/downSlider8.PNG" />
+            </div>
+            <div>
+                <img src="images/shoe2.PNG" />
+            </div>
+            <div>
+                <img src="images/shoe1.PNG" />
+            </div>
+        </div>
+    </div>
+    <div class="black">
+        <img src="images/blackOwned.jpeg"/>
+        <div class="blackTextDiv">
+            <p>Shop the brands and get to know visionary creatives from the Black community.</p>
+            <div>
+                <button>Explore Diversity, Inclusion & Belonging</button>
+                <button>Shop Black-Owned & Black-Founded Brands</button>
+            </div>
+        </div>
+    </div>
+    <div class="trunkDiv">
+        <div>
+            <img src="images/trunk.jpeg"/>
+            <div class="trunkTextDiv">
+                <p>Try before you with Nordstrom Trunk Club. Get head-to-toe outfits, styled by us, delivered right to your door.</p>
+                <button>Take Your Style Quiz</button>
+            </div>
+        </div>
+        <div>
+            <img src="images/styleHelp.jpeg"/>
+            <div class="trunkTextDiv2">
+                <h2>Free Style Help</h2>
+                <p>Connect with a stylist in stores or online. It's free and easy - with zero pressure.
+                </p>
+                <button>Book an Appointment Nordstrom Styling</button>
+            </div>
+        </div>
+    </div>
+    <div class="helpDiv">
+        <p>NEED   HELP ?</p>
+        <div class="trackDiv">
+            <img src="images/track.PNG"/>
+            <img src="images/return.PNG"/>
+            <img src="images/adjustment.PNG"/>
+        </div>
+    </div>
+    <div class="touch">
+        <img src="images/touch.jpeg"/>
+        <div class="touchTextDiv">
+            <h3>Stay in Touch</h3>
+            <p>Sign Up and stay in the know! Fashion, beauty, upcoming sales and events - we'll bring it all to you.</p>
+            <button>Sign Up for Email</button>
+        </div>
+    </div>
     <div class="footerDiv">
         <div class="footerTextDiv">
             <div>
@@ -1141,7 +1256,7 @@
                 <p>Trunk Club</p>
                 <p>Investor Relations</p>
                 <p>Press Releases</p>
-            </div>
+            </div> 
             <div>
                 <h5>Nordstrom, Inc</h5>
                 <p>Nordstrom Rack</p>
@@ -1159,7 +1274,48 @@
             <p>@2021 Nordstrom, Inc.</p>
         </div>
     </div>
-    <!-- end -->
 </body>
-<script src="products_main.js"></script>
 </html>
+<script src="landingPage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$('.slider').slick({
+    arrow: true,
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+</script>
