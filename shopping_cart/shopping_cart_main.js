@@ -183,7 +183,7 @@ function removeCartItem(productId){
         for(let i=0; i<cart.length; i++){
             if(cart[i].prodObj.id == productId){
                 //deduce subtotal and count from meta cart
-                metaCart.count -= 1;
+                metaCart.count -= cart[i].qty;
                 metaCart.total -= cart[i].subTotal;
                 //remove cart item
                 cart.splice(i,1);
@@ -203,6 +203,7 @@ function removeCartItem(productId){
     });
 
     document.getElementById("modalNoBtn").addEventListener("click", () => {
+        //dont delete
         //hide modal
         hideModal();
     });
@@ -219,4 +220,23 @@ function hideModal(){
     const modal = document.getElementById("yesNoModal");
     modal.style.visibility = "hidden";
 }
+
+/* dynamic nav cart count */
+function loadNavCount(){
+    /* loads navbar cart count */
+  
+    const navCart = document.getElementById("navCartCount");
+  
+    //get meta cart
+    let cart = JSON.parse(localStorage.getItem("metaCart"));
+  
+    if(cart == null){
+      navCart.innerHTML = 0;
+    }
+    
+    navCart.innerHTML = cart.count;
+  
+  }
+  loadNavCount();
+  /* end */
 loadShoppingCart();
