@@ -965,7 +965,7 @@
     </div>
     <div id="shoppingBagDiv">
         <div class="shoppingButtons">
-            <button id="shoppingBagButton">Shopping Bag ()</button>
+            <button id="shoppingBagButton">Shopping Bag (<span id="cartCount">0</span>)</button>
             <button id="savedForLater">Saved for later (0)</button>
         </div>
         <div class="shoppingBadSecDiv">
@@ -976,48 +976,8 @@
                     <p>Choose gift options when you check out</p>
                 </div>
                 <p>Items in your bag are not on hold.</p>
-                <div class="shopBagProduct">
-                    <div>
-                        <img src="https://n.nordstrommedia.com/id/sr3/db4b8f58-2acb-44da-8905-c88f143fc431.jpeg?w=156&h=240"/>
-                    </div>
-                    <div class="bagProdDesc">
-                        <p>CASLON</p>
-                        <p>Slub Crewneck Tee</p>
-                        <p><span class="bagProdSpan">Size:</span> X-Small</p>
-                        <p><span class="bagProdSpan">Color:</span> BLACK- IVORY NORTHSHORE STRIPE</p>
-                        <p><span class="bagProdSpan">Item:</span> 5247798</p>
-                        <div class="deliveryDiv">
-                            <img src="images/outline_local_shipping_black_24dp.png"/>
-                            <div>
-                                <p>Delivery</p>
-                                <p>Tue, 8/3- Sat, 8/7</p>
-                            </div>
-                        </div>
-                        <div class="deliveryDiv">
-                            <img src="images/outline_location_on_black_24dp.png" />
-                            <div>
-                                <p>Pickup</p>
-                                <p>Available</p>
-                            </div>
-                        </div>
-                        <div class="removeButton">
-                            <button>Remove</button>
-                            <button>Save for later</button>
-                        </div>
-                    </div>
-                    <div>
-                        <select id="selectQty">
-                            <option>Qty 1</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="bagProdCost">
-                        <p>INR 2,350</p>
-                    </div>
+                <div id="dynamicProductsDiv">
+                    <!-- Cart Items will be dynamically generated here  -->
                 </div>
             </div>
             <div class="shoppingBagRight">
@@ -1036,11 +996,11 @@
             <span class="chatText">Ship Internationally?</span>
         </div>
         <div class="totalDiv">
-            <p>Subtotal</p>
-            <p>Shipping</p>
-            <p>Estimated tax</p>
+            <p>Subtotal:<span class="cartValues"></span></p>
+            <p>Shipping:<span class="cartValues">FREE</span></p>
+            <p>Estimated tax:<span class="cartValues">Not Applicable</span></p>
             <div class="finalHorLine"></div>
-            <p>Estimated Total</p>
+            <p>Estimated Total<span class="cartValues">Not Applicable</span></p>
             <button id="checkoutButton">Check Out</button>
             <p>Get a $60 Bonus note when you see a new Nordstrom credit card. <span class="chatText">Apply now</span></p>
         </div>
@@ -1102,4 +1062,5 @@
         </div>
     </div>
 </body>
+<script src="../shopping_cart/shopping_cart_main.js"></script>
 </html>
