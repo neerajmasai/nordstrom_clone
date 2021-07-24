@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="shopping_cart_style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 </head>
 <body>
     <div id="headerDiv">
@@ -959,6 +961,19 @@
             </div>
         </div>
     </div>
+    <div id="yesNoModal" class="yesNoModal">
+        <div class="topBar">
+            <span onclick="hideModal()" id="closeIcon" class="material-icons">
+                close
+            </span>
+        </div>
+        <h3>Shopping Bag</h3>
+        <h4>Do you really want to remove the selected Item?</h4>
+        <div class="modalBtns">
+            <button id="modalYesBtn">Yes</button>
+            <button id="modalNoBtn">No</button>
+        </div>
+    </div>
     <div class="headerDiv3">
         <p>Pick Up Today - in Store or Curbside</p>
         <p>Set Your Store</p>
@@ -996,11 +1011,23 @@
             <span class="chatText">Ship Internationally?</span>
         </div>
         <div class="totalDiv">
-            <p>Subtotal:<span class="cartValues"></span></p>
-            <p>Shipping:<span class="cartValues">FREE</span></p>
-            <p>Estimated tax:<span class="cartValues">Not Applicable</span></p>
+            <div class="totalColumns">
+                <p>Subtotal</p>
+                <p id="subTotal"></p>
+            </div>
+            <div class="totalColumns">
+                <p>Estimated Tax</p>
+                <p><b>All inclusive</b></p>
+            </div>
+            <div class="totalColumns">
+                <p>Estimated Shipping</p>
+                <p><b>FREE</b></p>
+            </div>
             <div class="finalHorLine"></div>
-            <p>Estimated Total<span class="cartValues">Not Applicable</span></p>
+            <div class="totalColumns">
+                <p>Estimated Total</p>
+                <p id="total"></p>
+            </div>
             <button id="checkoutButton">Check Out</button>
             <p>Get a $60 Bonus note when you see a new Nordstrom credit card. <span class="chatText">Apply now</span></p>
         </div>
