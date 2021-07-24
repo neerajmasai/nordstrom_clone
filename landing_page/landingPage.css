@@ -223,7 +223,6 @@ body {
 .greatDealImgs > div > img {
     height: 100%;
     width: 20%;
-
 }
 
 .slider .slick-next::before,
@@ -786,4 +785,387 @@ body {
 }
 .shipCross:hover {
     cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .headerDiv > p {
+        font-size: 9px;
+    }
+    .header1 {
+        height: 50px;
+        background-color: rgb(251,228,70);
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header1 > p {
+        margin-top: 0px;
+        padding-top: 15px;
+        font-size: 9px;
+        margin-left: 50px;
+    }
+    .previewButton {
+        display: none;
+    }
+    .header2 {
+        height: 100px;
+        /* border: 1px solid green; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logoDiv {
+        height: 50px;
+        width: 50px;
+        /* background-color: gray; */
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+        background-color: none;
+        border: none;
+        font-size: 11px;
+        font-weight: bold;
+        margin-left: 150px;
+        padding-right: 0px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .navList {
+        /* width: 80%;
+        height: 100px;
+        /* background-color: peachpuff; */
+        /* margin-left: 30px; */
+        display: none;
+    }
+    .listStyle {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 30px;
+        padding-left: 0px;
+        font-size: 14px;
+    }
+    .listStyle {
+        margin-top: 5px;
+        font-size: 9px;
+        margin-left: 2px;
+    }
+    .navRight {
+        width: 50%;
+        height: 80px;
+        margin-top: 20px;
+        /* background-color: peachpuff; */
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 30px;
+    }
+    #signIn {
+        height: 20px;
+        width: 80px;
+        border: none;
+        margin-top: 30px;
+        /* margin-left: 5px; */
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .search > img {
+        width: 20px;
+        height: 20px;
+        margin-top: 32px;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    .navRight > img {
+        padding-left: 10px;
+    }
+    .search > p {
+        margin-top: 32px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .headerDiv3 {
+        display: none;
+    }
+    .body1 {
+        width: 95%;
+        height: 250px;
+        margin-left: 2.5%;
+        margin-top: 15px;
+    }
+    #carosol1, .previewText {
+        display: none;
+    }
+    #carosol2 {
+        width: 95%;
+        height: 250px;
+        margin-left: 2.5%;
+        margin-top: 30px;
+        /* border: 1px solid black; */
+    }
+    .carosolImg2 {
+        width: 100%;
+        height: 250px;
+    }
+    .greatDeals > h2 {
+        font-size: 22px;
+    }
+    .slider .slick-next::before,
+    .slider .slick-prev::before {
+        /* font-family: "slice"; */
+        font-size: 18px;
+        color: black;
+        background-color: rgb(229, 233, 232);
+        border-radius: 10px;
+    }
+    .greatDealImgs > div {
+        padding-left: 40px;
+    }
+    .freeStyleDiv {
+        width: 95%;
+        height: 520px;
+        margin-left: 2.5%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .freeStyleDiv > div {
+        width: 100%;
+        height: 48%;
+        position: relative;
+        /* border: 1px solid black; */
+    }
+    .freeStyleDiv > div > img {
+        width: 102%;
+        height: 90%;
+        /* position: relative; */
+    }
+    .freeStyleTextDiv {
+        width: 150px;
+        height: 100px;
+        top: 15%;
+        left: 5%;
+        margin-top: 12%;
+        position: absolute;
+        /* border: 1px solid black; */
+    }
+    .freeStyleTextDiv > p, .freeStyleTextDiv2 > p {
+        font-size: 9px;
+        line-height: 0.3cm;
+    }
+    .freeStyleTextDiv > button, .freeStyleTextDiv2 > button {
+        font-size: 10px;
+    }
+    .freeStyleTextDiv2 {
+        width: 150px;
+        height: 100px;
+        top: 25%;
+        left: 5%;
+        margin-top: 10%;
+        position: absolute;
+        /* border: 1px solid black; */
+    } 
+    .mickey {
+        width: 95%;
+        height: 750px;
+        margin-left: 2.5%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .mickeyDivs {
+        width: 100%;
+        height: 180px;
+        /* border: 1px solid red; */
+    }
+    .mickeyDivs > img {
+        width: 100%;
+        height: 140px;
+        margin-left: 10px;
+    }
+    .mickeyText > p:first-child {
+        font-size: 9px;
+    }
+    .mickeyText >p:nth-child(2) {
+        font-size: 10px;
+    }
+    .mickeyText > button {
+        font-size: 12px;
+        margin-top: 0px;
+        margin-left: 150px;
+    }
+    .diningButtons  button {
+        height: 20px; 
+        font-size: 11px;
+    }
+    .diningButtons button:first-child {
+        margin-left: 50px;
+    }
+    .orangeDiv { 
+        display: none;
+    }
+    .categoryDiv {
+        height: 500px;
+        width: 95%;
+        /* border: 1px solid black; */
+        margin-left: 2.5%;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .catDivs {
+        width: 100%;
+        height: 500px;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .catDiv1 {
+        width: 31%;
+        height: 49%;
+        /* border: 1px solid green; */
+    }
+    .catDiv1 > img {
+        width: 100%;
+        height: 160px;
+    }
+    .catDiv1 > p {
+        font-size: 9px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 3px;
+    }
+    .black {
+        display: none;
+    }
+    .trunkDiv {
+        width: 95%;
+        height: 300px;
+        margin-left: 2.5%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .trunkDiv > div:first-child {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
+        position: relative;
+        /* border: 1px solid red; */
+    }
+    .trunkTextDiv {
+        width: 150px;
+        height: 200px;
+        top: 20%;
+        left: 5%;
+        position: absolute;
+        /* border: 1px solid black; */
+    }
+    .trunkDiv > div:last-child {
+        /* margin-top: 0px;
+        margin-bottom: 0px; */
+        display: none;
+    }
+    .trunkTextDiv2 {
+        width: 140px;
+        height: 200px;
+        top: 5%;
+        left: 60%;
+        position: absolute;
+    }
+    .trunkTextDiv2 > h2 {
+        margin-left: 25px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .trunkTextDiv > p, .trunkTextDiv2 > p {
+        font-size: 9px;
+        line-height: 0.3cm;
+    }
+    .trunkTextDiv > button, .trunkTextDiv2 > button {
+        display: none;
+    }
+    .trunkTextDiv2 > button {
+        margin-left: 0%;
+        font-size: 11px;
+    }
+    .trunkDiv > div > img {
+        width: 100%;
+        height: 48%;
+    }
+    .helpDiv {
+        width: 95%;
+        height: 600px;
+        margin-left: 2.5%;
+        margin-top: 0px !important;
+        padding-top: 0px;
+    }
+    .helpDiv > p {
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 20px;
+        word-spacing: 5px;
+    }
+    .trackDiv {
+        width: 80%;
+        height: 490px;
+        margin-left: 10%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+    }
+    .trackDiv > img {
+        width: 100%;
+        height: 31%;
+        /* border: 1px solid red; */
+    }
+    .touch {
+        display: none;
+    }
+    .footerDiv {
+        height: 400px;
+        width: 100%;
+        /* border: 1px solid black; */
+        margin-top: 20px;
+        background-color: rgb(246,246,246);
+    }
+    .footerTextDiv {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* border: 1px solid red; */
+    }
+    .footerTextDiv > div {
+        height: 170px;
+        width: 31%;
+        /* border: 1px solid blue; */
+    }
+    .footerTextDiv h5 {
+        font-size: 11px;
+    }
+    .footerTextDiv p {
+        font-size: 8px;
+    }
+    .termsOfService {
+        width: 100%;
+        height:20px;
+        margin-left: 0px;
+    }
+    .termsOfService > p {
+        font-size: 9px;
+        margin-top: 120px;
+    }
 }
