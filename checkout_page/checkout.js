@@ -11,18 +11,6 @@ function authenticateUser(){
     window.location.href = "../login page/login.html";
   }
 }
-function loadNavCount(){
-    /* loads navbar cart count */
-  
-    const navCart = document.getElementById("navCartCount");
-  
-    if(metaCart == null){
-      navCart.innerHTML = 0;
-    }
-    
-    navCart.innerHTML = metaCart.count;
-  
-}
   function loadCheckoutCart(){
     /* appends product images to checkout page */
     
@@ -57,6 +45,5 @@ function loadNavCount(){
     window.location.href = "../shopping_cart/shopping_cart.html";
   }  
   authenticateUser();
-  loadNavCount();
   loadCheckoutCart();
   /* end */
