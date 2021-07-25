@@ -3,7 +3,25 @@ let shipCross = document.querySelector(".shipCross");
 india.addEventListener("click", shipDetails);
 shipCross.addEventListener("click", shipDivClose);
 let homeShipDiv = document.querySelector(".homeShipDiv");
-
+// 
+window.onload = function logged() {
+    var isLoggedIn = JSON.parse(localStorage.getItem("isLoggedIn"));
+    var sign = document.getElementById("signInOption")
+    var currentEmail = JSON.parse(localStorage.getItem("currentEmail"));
+    var allEmails = JSON.parse(localStorage.getItem("allEmails"));
+    var details = allEmails.filter(function (el) {
+        return el.curEmail == currentEmail;
+    })[0]
+    sign.innerHTML = details.fName;
+    var logout = document.createElement("button")
+    logout.innerHTML = "Sign Out"
+    logout.addEventListener("click", function () {
+        isLoggedIn = false;
+        localStorage.setItem("isLoggedIn", JSON.stringify(isLoggedIn))
+        window.location.reload
+    })
+}
+//
 function shipDetails() {
     homeShipDiv.style.display = "inherit";
 }
