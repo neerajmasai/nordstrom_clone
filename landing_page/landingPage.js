@@ -13,12 +13,13 @@ window.onload = function logged() {
         return el.curEmail == currentEmail;
     })[0]
     sign.innerHTML = details.fName;
-    var logout = document.createElement("button")
+    var logout = document.getElementById("signOutOption")
     logout.innerHTML = "Sign Out"
     logout.addEventListener("click", function () {
+        alert();
         isLoggedIn = false;
-        localStorage.setItem("isLoggedIn", JSON.stringify(isLoggedIn))
-        window.location.reload
+        localStorage.setItem("isLoggedIn", JSON.stringify(isLoggedIn));
+        window.location.reload();
     })
 }
 //
@@ -285,5 +286,5 @@ function loadNavCount(){
     /* redirect to shopping cart */
     window.location.href = "../shopping_cart/shopping_cart.html";
   }
-  loadNavCount();
+  //loadNavCount();
   /* end */
