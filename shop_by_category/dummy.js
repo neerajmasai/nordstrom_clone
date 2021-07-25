@@ -1,3 +1,4 @@
+
 let homeRedirect = document.getElementById("homeRedirect");
 homeRedirect.addEventListener("click", redirectToHome);
 
@@ -38,6 +39,31 @@ function signIn(){
     /* redirect to sign in page */
     window.location.href = "../login page/login.html";
 }
+
+function shoppingCart(){
+  /* redirect to shopping cart */
+  window.location.href = "../shopping_cart/shopping_cart.html";
+}
+
+/* dynamic nav cart count */
+function loadNavCount(){
+  /* loads navbar cart count */
+
+  const navCart = document.getElementById("navCartCount");
+
+  //get meta cart
+  let cart = JSON.parse(localStorage.getItem("metaCart"));
+
+  if(cart == null){
+    navCart.innerHTML = 0;
+  }
+  
+  navCart.innerHTML = cart.count;
+
+}
+
+//load navCount
+loadNavCount();
 //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
