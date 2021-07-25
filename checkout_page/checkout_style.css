@@ -132,11 +132,26 @@ body{
     font-size: 14px;
     background-color: rgb(246,246,246);
 }
-.navRight > img {
+.navRight > .navShopIcon img{
     width: 30px;
     height: 35px;
     margin-top: 18px;
 }
+/* dynamic nav cart css - neeraj */
+.navShopIcon{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.navShopIcon > p{
+    position: absolute;
+    top: 20px;
+    font-size: small;
+}
+.navShopIcon:hover{
+    cursor: pointer;
+}
+/* end */
 .headerDiv3 {
     height: 80px;
     width: 90%;

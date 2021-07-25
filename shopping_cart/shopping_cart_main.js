@@ -239,4 +239,10 @@ function loadNavCount(){
   }
   loadNavCount();
   /* end */
+/* checkout page */
+function checkOut(){
+/* redirect user to checkout page if user is logged in */
+window.location.href = "../checkout_page/checkout.html";
+}
+/* end */
 loadShoppingCart();
