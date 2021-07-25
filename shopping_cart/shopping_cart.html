@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="shopping_cart_style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 </head>
 <body>
     <div id="headerDiv">
@@ -44,7 +46,10 @@
                 <select name="sign in" id="signIn">
                     <option id="signInOption">Sign In</option>
                 </select>
-                <img src="images/shopping-bag.png">
+                <div class="navShopIcon" onclick="shoppingCart()">
+                    <img src="images/shopping-bag.png">
+                    <p id="navCartCount">0</p>
+                </div>
             </div>
         </div>
     </div>
@@ -959,13 +964,26 @@
             </div>
         </div>
     </div>
+    <div id="yesNoModal" class="yesNoModal">
+        <div class="topBar">
+            <span onclick="hideModal()" id="closeIcon" class="material-icons">
+                close
+            </span>
+        </div>
+        <h3>Shopping Bag</h3>
+        <h4>Do you really want to remove the selected Item?</h4>
+        <div class="modalBtns">
+            <button id="modalYesBtn">Yes</button>
+            <button id="modalNoBtn">No</button>
+        </div>
+    </div>
     <div class="headerDiv3">
         <p>Pick Up Today - in Store or Curbside</p>
         <p>Set Your Store</p>
     </div>
     <div id="shoppingBagDiv">
         <div class="shoppingButtons">
-            <button id="shoppingBagButton">Shopping Bag ()</button>
+            <button id="shoppingBagButton">Shopping Bag (<span id="cartCount">0</span>)</button>
             <button id="savedForLater">Saved for later (0)</button>
         </div>
         <div class="shoppingBadSecDiv">
@@ -976,57 +994,17 @@
                     <p>Choose gift options when you check out</p>
                 </div>
                 <p>Items in your bag are not on hold.</p>
-                <div class="shopBagProduct">
-                    <div>
-                        <img src="https://n.nordstrommedia.com/id/sr3/db4b8f58-2acb-44da-8905-c88f143fc431.jpeg?w=156&h=240"/>
-                    </div>
-                    <div class="bagProdDesc">
-                        <p>CASLON</p>
-                        <p>Slub Crewneck Tee</p>
-                        <p><span class="bagProdSpan">Size:</span> X-Small</p>
-                        <p><span class="bagProdSpan">Color:</span> BLACK- IVORY NORTHSHORE STRIPE</p>
-                        <p><span class="bagProdSpan">Item:</span> 5247798</p>
-                        <div class="deliveryDiv">
-                            <img src="images/outline_local_shipping_black_24dp.png"/>
-                            <div>
-                                <p>Delivery</p>
-                                <p>Tue, 8/3- Sat, 8/7</p>
-                            </div>
-                        </div>
-                        <div class="deliveryDiv">
-                            <img src="images/outline_location_on_black_24dp.png" />
-                            <div>
-                                <p>Pickup</p>
-                                <p>Available</p>
-                            </div>
-                        </div>
-                        <div class="removeButton">
-                            <button>Remove</button>
-                            <button>Save for later</button>
-                        </div>
-                    </div>
-                    <div>
-                        <select id="selectQty">
-                            <option>Qty 1</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="bagProdCost">
-                        <p>INR 2,350</p>
-                    </div>
+                <div id="dynamicProductsDiv">
+                    <!-- Cart Items will be dynamically generated here  -->
                 </div>
             </div>
             <div class="shoppingBagRight">
                 <p>People also viewed</p>
-                <img src="images/viewd1.PNG"/>
-                <img src="images/viewd2.PNG"/>
-                <img src="images/viewed3.PNG"/>
-                <img src="images/viewed4.PNG"/>
-                <img src="images/viewed5.PNG"/>
+                <img src="images/shopBagImg1.PNG"/>
+                <img src="images/shopBagImg2.PNG"/>
+                <img src="images/shopBagImg3.PNG"/>
+                <img src="images/shopBagImg4.PNG"/>
+                <img src="images/shopBagImg5.PNG"/>
             </div>
         </div>
     </div>
@@ -1036,11 +1014,23 @@
             <span class="chatText">Ship Internationally?</span>
         </div>
         <div class="totalDiv">
-            <p>Subtotal</p>
-            <p>Shipping</p>
-            <p>Estimated tax</p>
+            <div class="totalColumns">
+                <p>Subtotal</p>
+                <p id="subTotal"></p>
+            </div>
+            <div class="totalColumns">
+                <p>Estimated Tax</p>
+                <p><b>All inclusive</b></p>
+            </div>
+            <div class="totalColumns">
+                <p>Estimated Shipping</p>
+                <p><b>FREE</b></p>
+            </div>
             <div class="finalHorLine"></div>
-            <p>Estimated Total</p>
+            <div class="totalColumns">
+                <p>Estimated Total</p>
+                <p id="total"></p>
+            </div>
             <button id="checkoutButton">Check Out</button>
             <p>Get a $60 Bonus note when you see a new Nordstrom credit card. <span class="chatText">Apply now</span></p>
         </div>
@@ -1102,4 +1092,5 @@
         </div>
     </div>
 </body>
+<script src="../shopping_cart/shopping_cart_main.js"></script>
 </html>

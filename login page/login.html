@@ -976,14 +976,14 @@
             </div>
             <div class="a" id="line3">By tapping Next,you agree to our Privacy</div>
             <div class="a">Policy and Terms and Conditions.</div>
-            <button id="btn1" onclick="loginUser()">Next</button>
+            <button id="btn1" onclick="writeToStorage()">Next</button>
         </div>
         <div id="box4">
             <h2 class="a b">No Nordstrom card?</h2>
             <div class="a" id="line4">Only cardmembers can shop Early Access. You can</div>
             <div class="a">still see what’s on sale and save your favorites to your</div>
             <div class="a">Wish List.</div>
-            <button id="btn2">Preview the Sale</button>
+            <button id="btn2" onclick="home()">Preview the Sale</button>
             <h4 class="a" id="line5">Want to shop early?</h4>
             <p class="a">Apply for a Nordstrom card</p>
         </div>
@@ -1045,28 +1045,5 @@
         </div>
     </div>
 </body>
-<script>
-    function userRegistration() {
-            let userData = {
-                email: document.getElementById('input1').value
-            };
-            localStorage.setItem('UsersLogin', JSON.stringify(userData));
-            window.location.reload();
-    }
-
-    function loginUser() {
-            let loginEmail = document.getElementById('input1').value
-            if (localStorage.getItem('UsersLogin')) {
-                let loginDeets = JSON.parse(localStorage.getItem('UsersLogin'))
-                if (loginEmail === loginDeets.email) {
-                    window.location.href = "login3.html";
-                } else {
-                    console.log('Wrong credentials');
-                }
-            } else {
-                window.location.href = "login1.html";
-            }
-    }
-</script>
-
+    <script src="login_main.js"></script>
 </html>

@@ -49,7 +49,10 @@
                 <select name="sign in" id="signIn">
                     <option id="signInOption">Sign In</option>
                 </select>
-                <img src="images/shopping-bag.png">
+                <div class="navShopIcon" onclick="shoppingCart()">
+                    <img src="images/shopping-bag.png">
+                    <p id="navCartCount">0</p>
+                </div>
             </div>
         </div>
     </div>
@@ -965,6 +968,34 @@
         </div>
     </div>
     <!-- end -->
+    <!-- shopping cart single div -->
+    <div id="currCart" class="currCart">
+        <div class="topBar">
+            <span onclick="hideSuccess()" id="closeIcon" class="material-icons">
+                close
+            </span>
+        </div>
+        <div class="cartInfo">
+            <div id="lftBox">
+                <img id="cartImg" src="images/chappal_product_zoom.jpeg" alt="product image">
+            </div>
+            <div id="rgtBox">
+                <h2>Added to your bag.</h2>
+                <div id="dynmInfo">
+                    <p><span id="cartProdName">product name</span><br><span id="cartProdBrand">product name</span></p>
+                    <p class="cartPriceTxt">INR <span id="cartPrice">59976</span></p>
+                    <div class="checkoutBtns">
+                        <button id="checkoutBtn" onclick="checkOut()">Checkout</button>
+                        <a href="../shopping_cart/shopping_cart.html" class="viewBagAnchor">View Shopping Bag (<span id="cartCount"></span>)<span id="cartQty"></span></a>
+                    </div>
+                    <div class="freq-bought">
+                        <!-- later if we have time -->
+                    </div>    
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!-- end -->
     <div class="products-container">
         <div class="lft-container">
             <img id="img1" src="images/chappal_product.jpeg" alt="chappal">
@@ -1060,7 +1091,7 @@
                 <a href="" class="sizeAnchor peopleAnchor"><b>84</b> people are viewing</a>
             </div>
             <div class="cartbtn">
-                <button><span id="bagIcon" class="material-icons">work</span>Add to Bag</button>
+                <button onclick="addToCart()"><span id="bagIcon" class="material-icons">work</span>Add to Bag</button>
             </div>
             <div class="wishlist">
                 <span id="addIcon" class="material-icons">add</span>

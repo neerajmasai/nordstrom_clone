@@ -1,4 +1,3 @@
-/* nav bar css */
 body {
     font-family: 'Voltaire', sans-serif;
 }
@@ -59,7 +58,7 @@ body {
     width: 200px;
     /* background-color: gray; */
 }
-.logo {
+.mainLogo {
     width: 250px;
     height: 80px;
     background-color: none;
@@ -214,75 +213,90 @@ body {
 #designer:hover, #sale:hover, #brands:hover, #activeWear:hover {
     text-decoration: underline;
 }
-/* nav bar end */
-#container{
-            display: flex;
-            justify-content: center;
-        }
-        #box{
-            margin-top: 40px;
-        }
-        #head{
-            font-weight: lighter;
-            color: rgb(102, 100, 100);
-        }
-        #line{
-            color: rgb(102, 100, 100);
-            font-size: large;
-        }
-        #nord{
-            color: rgb(14, 12, 12);
-            font-weight: lighter;
-        }
-        #btn{
-            width: 300px;
-            height: 40px;
-            background-color:black;
-            color:white;
-            margin-top: 50px;
-            border: none;
-        }
-        #pass{
-            color:rgb(102, 100, 100) ;
-            font-weight:bold ;
-        }
-        #inp {
-            width: 290px;
-            height: 30px;
-        }
-        #forgot{
-            margin-top: 20px;
-        }
-        .footerDiv {
-  height: 300px;
-  width: 100%;
-  /* border: 1px solid black; */
-  margin-top: 50px;
-  background-color: rgb(246, 246, 246);
+.logo{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 41%;
+}
+.successContainer {
+    width: 35%;
+    height: 450px;
+    margin-left: 32.5%;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(238, 238, 238);
+    box-shadow: 0px 0px 25px rgb(219, 218, 218);
+    text-align: center;
+}
+.tickDiv {
+    width: 100%;
+    height: 40%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(253,223,44);
+}
+.tickImg {
+    width: 45%;
+    height: 100%;
+    margin-left: 27.5%;
+    /* border: 1px solid black; */
+}
+.tickImg > img {
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    font-size: 40px;
+}
+.successText {
+    font-size: 20px;
+}
+.successText ~ p {
+    font-size: 17px;
+}
+button {
+    height: 50px;
+    width: 50%;
+    color: rgb(255,255,255);
+    border: none;
+    margin-left: 3%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+}
+/* footer css */
+
+.footerDiv {
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    background-color: rgb(246,246,246);
 }
 .footerTextDiv {
-  height: 250px;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  /* border: 1px solid red; */
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
 }
 .footerTextDiv > div {
-  height: 250px;
-  width: 15.5%;
-  /* border: 1px solid blue; */
+    height: 250px;
+    width: 15.5%;
+    /* border: 1px solid blue; */
 }
 .footerTextDiv p {
-  font-size: 13px;
+    font-size: 13px;
 }
 .termsOfService {
-  width: 60%;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 3.5%;
-  /* border: 1px solid black; */
+    width: 60%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3.5%;
+    /* border: 1px solid black; */
 }
 .termsOfService > p {
-  font-size: 13px;
+    font-size: 13px;
 }
