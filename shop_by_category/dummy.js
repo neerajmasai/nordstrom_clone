@@ -14,34 +14,6 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
-// const data = [
-//   {
-//     id:1,
-//     name: "Supergoop! Unseen Sunscreen Broad",
-//     price: 1335.97,
-//     img1: "images/product1.jpeg",
-//     img2: "images/product1.1.jpeg",
-//   },
-//   {
-//     id:2,
-
-//     name: "Olaplex No. 4 Bond Maintenance™ Shampoo",
-//     price: 1100,
-//     img1: "images/product2.jpeg",
-//     img2: "images/product2.2.jpeg",
-//   },
-//   {
-//     id:3,
-
-//     name: "Dyson Supersonic™ Hair Dryer Copper Limited",
-//     price: 31000,
-//     img1: "images/product3.jpeg",
-//     img2: "images/product3.3.jpeg",
-//   },
-// ];
-
-// if local storage is null set products in local storage
-
 const allproducts = [
   {
     id: 1,
@@ -49,6 +21,7 @@ const allproducts = [
     price: 1335.97,
     img1: "images/product1.jpeg",
     img2: "images/product1.1.jpeg",
+    brand: "Supergoop",
   },
   {
     id: 2,
@@ -56,6 +29,7 @@ const allproducts = [
     price: 1100,
     img1: "images/product2.jpeg",
     img2: "images/product2.2.jpeg",
+    brand: "Supergoop",
   },
   {
     id: 3,
@@ -63,6 +37,7 @@ const allproducts = [
     price: 6000,
     img1: "images/product3.jpeg",
     img2: "images/product3.3.jpeg",
+    brand: "Dyson",
   },
   {
     id: 4,
@@ -70,6 +45,7 @@ const allproducts = [
     price: 10600,
     img1: "images/product4.jpeg",
     img2: "images/product4.jpeg",
+    brand: "Dyson",
   },
   {
     id: 5,
@@ -77,6 +53,7 @@ const allproducts = [
     price: 4900,
     img1: "images/product5.jpeg",
     img2: "images/product5.5.jpeg",
+    brand: "Dyson",
   },
   {
     id: 6,
@@ -84,6 +61,7 @@ const allproducts = [
     price: 31000,
     img1: "images/product6.jpeg",
     img2: "images/product6.6.jpeg",
+    brand: "Armour",
   },
   {
     id: 7,
@@ -91,6 +69,7 @@ const allproducts = [
     price: 2800,
     img1: "images/product7.jpeg",
     img2: "images/product7.1.jpeg",
+    brand: "Armour",
   },
   {
     id: 8,
@@ -98,6 +77,7 @@ const allproducts = [
     price: 7000,
     img1: "images/product8.jpeg",
     img2: "images/product8.8.jpeg",
+    brand: "Armour",
   },
 ];
 
@@ -128,6 +108,9 @@ function showProducts(el) {
   var heading4 = document.createElement("h4");
   heading4.textContent = "INR" + " " + el.price;
 
+  var heading5 = document.createElement("h5");
+  heading5.textContent = "Brand:" + " " + el.brand;
+
   var a = document.createElement("a");
   a.setAttribute("class", "add-cart cart1");
   a.textContent = "Quick View";
@@ -141,7 +124,7 @@ function showProducts(el) {
   <span><i class="fas fa-star"></i></span>`;
 
   // append all child  to product
-  prodimg.append(img, heading3, heading4, a, rating);
+  prodimg.append(img, heading3, heading4, a, rating, heading5);
 
   productitem.append(prodimg);
 
@@ -204,6 +187,20 @@ function getSelected() {
   } else {
     sortH();
   }
+}
+
+function myFunction(msg) {
+  let product_items = document.getElementById("product_items");
+  product_items.innerHTML = null;
+  var data = JSON.parse(localStorage.getItem("products"));
+  let filterData = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].brand == msg) {
+      showProducts(data[i]);
+      // filterData.push(data[i]);
+    }
+  }
+  console.log(filterData);
 }
 
 //  sortl()
