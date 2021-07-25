@@ -270,6 +270,7 @@ body {
 
 /* Style the sidenav links and the dropdown button */
 .sidenav a,
+input,
 .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -445,7 +446,7 @@ body {
 } */
 
 .prod_img:hover .cart1 {
-  bottom: 80px;
+  bottom: 90px;
   opacity: 1;
   text-decoration: none;
   padding: 10px;
@@ -548,3 +549,86 @@ body {
 }
 
 /* Footer Css Ending */
+
+.branding button {
+  background-color: #fbe446;
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 75px;
+}
+
+@media (max-width: 600px) {
+  #headerDiv {
+    /* display: none; */
+    width: 100%;
+  }
+  .navList {
+    display: none;
+  }
+  .listStyle {
+    display: none;
+  }
+  .saleSpan {
+    flex-wrap: wrap;
+    display: none;
+  }
+  #header1 {
+    display: none;
+    width: 100%;
+  }
+  .saleSpan span {
+    display: none;
+  }
+
+  .midText {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .head {
+    margin-left: 10px;
+  }
+  #menu {
+    display: none;
+  }
+  .previewButton {
+    display: none;
+  }
+  .header1 span {
+    display: none;
+  }
+  .navRight {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .search {
+    margin-left: 250px;
+  }
+  #signIn {
+    margin-left: 140px;
+  }
+  .sidenav {
+    width: 20%;
+  }
+  .select {
+    height: 30px;
+    margin-bottom: 40px;
+  }
+  #product_items {
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 30px;
+
+    width: 100%;
+    margin-left: 220px;
+    /* border: 2px solid yellow; */
+  }
+}
