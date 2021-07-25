@@ -3,7 +3,26 @@ let shipCross = document.querySelector(".shipCross");
 india.addEventListener("click", shipDetails);
 shipCross.addEventListener("click", shipDivClose);
 let homeShipDiv = document.querySelector(".homeShipDiv");
-
+// 
+window.onload = function logged() {
+    var isLoggedIn = JSON.parse(localStorage.getItem("isLoggedIn"));
+    var sign = document.getElementById("signInOption")
+    var currentEmail = JSON.parse(localStorage.getItem("currentEmail"));
+    var allEmails = JSON.parse(localStorage.getItem("allEmails"));
+    var details = allEmails.filter(function (el) {
+        return el.curEmail == currentEmail;
+    })[0]
+    sign.innerHTML = details.fName;
+    var logout = document.getElementById("signOutOption")
+    logout.innerHTML = "Sign Out"
+    logout.addEventListener("click", function () {
+        alert();
+        isLoggedIn = false;
+        localStorage.setItem("isLoggedIn", JSON.stringify(isLoggedIn));
+        window.location.reload();
+    })
+}
+//
 function shipDetails() {
     homeShipDiv.style.display = "inherit";
 }
@@ -246,3 +265,26 @@ function productPage(id){
     //redirect to product page
     window.location.href = "../products_page/products.html";
 }
+
+/* dynamic nav cart count */
+function loadNavCount(){
+    /* loads navbar cart count */
+  
+    const navCart = document.getElementById("navCartCount");
+  
+    //get meta cart
+    let cart = JSON.parse(localStorage.getItem("metaCart"));
+  
+    if(cart == null){
+      navCart.innerHTML = 0;
+    }
+    
+    navCart.innerHTML = cart.count;
+  
+  }
+  function shoppingCart(){
+    /* redirect to shopping cart */
+    window.location.href = "../shopping_cart/shopping_cart.html";
+  }
+  //loadNavCount();
+  /* end */

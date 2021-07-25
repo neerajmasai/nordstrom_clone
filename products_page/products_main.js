@@ -237,6 +237,9 @@ function addToCart(){
     //update cart meta data
     updateCartMetaData(cartItem);
 
+    //update navbar cart
+    loadNavCount();
+
     //display success
     showSuccess(cartItem, 0);
   }
@@ -259,10 +262,13 @@ function cartItemExists(productId){
         cart[i].subTotal += cart[i].prodObj.price;
 
         //store in localStorage
-        localStorage.setItem("cart",JSON.stringify(cart));
+        localStorage.setItem("cart",JSON.stringify(cart));     
 
         //update cart meta data
         updateCartMetaData(cart[i]);
+
+        //update navbar cart
+        loadNavCount();   
 
         //display success
         showSuccess(cart[i], 1);
@@ -336,6 +342,28 @@ function hideSuccess(){
   successDiv.style.visibility = "hidden";
 }
 
+function shoppingCart(){
+  /* redirect to shopping cart */
+  window.location.href = "../shopping_cart/shopping_cart.html";
+}
+/* end */
+
+/* dynamic nav cart count */
+function loadNavCount(){
+  /* loads navbar cart count */
+
+  const navCart = document.getElementById("navCartCount");
+
+  //get meta cart
+  let cart = JSON.parse(localStorage.getItem("metaCart"));
+
+  if(cart == null){
+    navCart.innerHTML = 0;
+  }
+  
+  navCart.innerHTML = cart.count;
+
+}
 /* end */
 
 /* header */
@@ -497,3 +525,6 @@ function dropDownDesigner2() {
 
 //load selected product
 loadSelectedProduct();
+
+//load navCount
+loadNavCount();
