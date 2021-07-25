@@ -46,16 +46,19 @@
                     <li id="brands">Brands</li>
                 </ul>
             </div>
-            <div class="navRight">
-                <div class="search">
-                    <img src="images/outline_search_black_24dp.png"/>
-                    <p>Search</p>
-                </div>
-                <select name="sign in" id="signIn">
-                    <option id="signInOption">Sign In</option>
-                </select>
-                <img src="images/shopping-bag.png">
+        <div class="navRight">
+            <div class="search">
+                <img src="images/outline_search_black_24dp.png" />
+                <p>Search</p>
             </div>
+            <select name="sign in" id="signIn">
+                <option id="signInOption" onclick="signIn()">Sign In</option>
+            </select>
+            <div class="navShopIcon" onclick="shoppingCart()">
+                <img src="images/shopping-bag.png">
+                <p id="navCartCount">0</p>
+            </div>
+        </div>
         </div>
     </div>
     <div class="dropMainContainer">
