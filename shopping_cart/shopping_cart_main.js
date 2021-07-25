@@ -16,6 +16,12 @@ function loadShoppingCart(){
     for(let i=0; i<cart.length; i++){
         appendCartItem(cart[i]);
     }
+
+    //load total columns
+    const subTotalP = document.getElementById("subTotal");
+    const total = document.getElementById("total");
+    subTotalP.innerHTML = `<b>&#8377; ${metaCart.total}</b>`;
+    total.innerHTML = `<b>&#8377; ${metaCart.total}</b>`;
 }
 
 function appendCartItem(cartItem){
@@ -26,6 +32,7 @@ function appendCartItem(cartItem){
     
     //parent div 2
     let productDiv = document.createElement("div");
+    productDiv.id = cartItem.prodObj.id; 
     productDiv.setAttribute("class", "shopBagProduct");
 
     //child elements
@@ -109,7 +116,11 @@ function appendCartItem(cartItem){
     rmvBtnDiv.setAttribute("class","removeButton");
     let rmvBtn = document.createElement("button");
     let saveBtn = document.createElement("button");
+    saveBtn.style.margin = "10px";
     rmvBtn.innerHTML = "Remove";
+    rmvBtn.addEventListener("click", () => {
+        removeCartItem(cartItem.prodObj.id);
+    });
     saveBtn.innerHTML = "Save for later";
 
     rmvBtnDiv.append(rmvBtn, saveBtn);
@@ -119,9 +130,33 @@ function appendCartItem(cartItem){
 
     //qty div
     let qtyDiv = document.createElement("div");
-    let qty = document.createElement("p");
-    qty.innerHTML = "<b>Qty: </b>"+cartItem.qty;
-    qtyDiv.append(qty);
+    qtyDiv.style.width = "10%";
+    qtyDiv.style.height = "10%";
+    qtyDiv.style.justifyContent = "center";
+    qtyDiv.style.alignItems = "center";
+    qtyDiv.style.display = "flex";
+    let qtyP = document.createElement("p");
+    qtyP.style.margin = "10px";
+    qtyP.innerHTML = "Qty";
+    let qty = document.createElement("select");
+    let opt = document.createElement("option");
+    //already selected qty
+    opt.value = cartItem.qty;
+    opt.innerHTML = cartItem.qty;
+    let opt1 = document.createElement("option");
+    opt1.value = 1;
+    opt1.innerHTML = "1";
+    let opt2 = document.createElement("option");
+    opt2.value = 2;
+    opt2.innerHTML = "2";
+    let opt3 = document.createElement("option");
+    opt3.value = 3;
+    opt3.innerHTML = "3";
+    let opt4 = document.createElement("option");
+    opt4.value = 4;
+    opt4.innerHTML = "4";    
+    qty.append(opt, opt1, opt2, opt3, opt4);
+    qtyDiv.append(qtyP, qty);
 
     //sub total div
     let subDiv = document.createElement("div");
@@ -137,5 +172,71 @@ function appendCartItem(cartItem){
     parentDiv.append(productDiv);
 
 }
+function removeCartItem(productId){
+    /* remove cart item from front end and local storage */
+    showModal();
+    document.getElementById("modalYesBtn").addEventListener("click", () => {
+        //yes delete
+        //remove from localStorage
+        let cart = JSON.parse(localStorage.getItem("cart"));
 
+        for(let i=0; i<cart.length; i++){
+            if(cart[i].prodObj.id == productId){
+                //deduce subtotal and count from meta cart
+                metaCart.count -= cart[i].qty;
+                metaCart.total -= cart[i].subTotal;
+                //remove cart item
+                cart.splice(i,1);
+            }
+        }
+
+        //save to storage
+        localStorage.setItem("cart", JSON.stringify(cart));
+        //save to storage
+        localStorage.setItem("metaCart", JSON.stringify(metaCart));   
+
+        //hide modal
+        hideModal();
+
+        //reload page
+        window.location.reload();
+    });
+
+    document.getElementById("modalNoBtn").addEventListener("click", () => {
+        //dont delete
+        //hide modal
+        hideModal();
+    });
+
+}
+
+function showModal(){
+    /* shows Y/N modal and returns response */
+    const modal = document.getElementById("yesNoModal");
+    modal.style.visibility = "visible";    
+}
+function hideModal(){
+    /* hide div after user clicks on close */
+    const modal = document.getElementById("yesNoModal");
+    modal.style.visibility = "hidden";
+}
+
+/* dynamic nav cart count */
+function loadNavCount(){
+    /* loads navbar cart count */
+  
+    const navCart = document.getElementById("navCartCount");
+  
+    //get meta cart
+    let cart = JSON.parse(localStorage.getItem("metaCart"));
+  
+    if(cart == null){
+      navCart.innerHTML = 0;
+    }
+    
+    navCart.innerHTML = cart.count;
+  
+  }
+  loadNavCount();
+  /* end */
 loadShoppingCart();
