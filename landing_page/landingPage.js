@@ -45,6 +45,13 @@ function shipDivClose() {
     homeShipDiv.style.display = "none";
 }
 
+let homeRedirect = document.getElementById("homeRedirect");
+homeRedirect.addEventListener("click", redirectToHome);
+
+function redirectToHome() {
+    window.location.href = "landingPage.html";
+}
+
 function slideShow() {
     let slidebox1 = document.getElementById("carosol1");
     let slideContainer1 = document.createElement("div");

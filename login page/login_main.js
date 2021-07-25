@@ -97,3 +97,12 @@ function signIn(){
     /* redirect to sign in page */
     window.location.href = "../login page/login.html";
 }
+
+// Redirection to Home page
+
+let homeRedirect = document.getElementById("homeRedirect");
+homeRedirect.addEventListener("click", redirectToHome);
+
+function redirectToHome() {
+    window.location.href = "..landing_page/landingPage.html";
+}

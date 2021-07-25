@@ -69,6 +69,9 @@ body {
     padding-right: 0px;
     margin-top: 22px;
 }
+#homeRedirect:hover {
+    cursor: pointer;
+}
 .navList {
     width: 50%;
     height: 80px;
@@ -269,8 +272,8 @@ body {
         #line3{
             margin-top: 25px;
         }
-        #box3{
-        }
+        /* #box3{
+        } */
         #btn1{
             width: 300px;
             height: 40px;

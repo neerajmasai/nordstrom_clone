@@ -46,4 +46,5 @@ function authenticateUser(){
   }  
   authenticateUser();
   loadCheckoutCart();
-  /* end */
+/* end */
+  

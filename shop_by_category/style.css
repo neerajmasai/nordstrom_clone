@@ -78,6 +78,9 @@ body {
   padding-right: 0px;
   margin-top: 22px;
 }
+#homeRedirect:hover {
+    cursor: pointer;
+}
 .navList {
   width: 50%;
   height: 80px;
@@ -127,10 +130,24 @@ body {
   margin-top: 30px;
   font-size: 14px;
 }
-.navRight > img {
-  width: 30px;
-  height: 35px;
-  margin-top: 18px;
+.navRight > .navShopIcon img{
+    width: 30px;
+    height: 35px;
+    margin-top: 18px;
+}
+/* dynamic nav cart css - neeraj */
+.navShopIcon{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.navShopIcon > p{
+    position: absolute;
+    top: 30px;
+    font-size: small;
+}
+.navShopIcon:hover{
+    cursor: pointer;
 }
 .headerDiv3 {
   height: 80px;

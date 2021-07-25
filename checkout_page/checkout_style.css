@@ -145,7 +145,7 @@ body{
 }
 .navShopIcon > p{
     position: absolute;
-    top: 20px;
+    top: 30px;
     font-size: small;
 }
 .navShopIcon:hover{

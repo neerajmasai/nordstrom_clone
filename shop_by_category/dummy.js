@@ -1,3 +1,10 @@
+let homeRedirect = document.getElementById("homeRedirect");
+homeRedirect.addEventListener("click", redirectToHome);
+
+function redirectToHome() {
+    window.location.href = "..landing_page/landingPage.html";
+}
+
 window.onload = function logged() {
     var isLoggedIn = JSON.parse(localStorage.getItem("isLoggedIn"));
     if(isLoggedIn){
@@ -235,6 +242,8 @@ function myFunction(msg) {
   }
   console.log(filterData);
 }
+
+
 
 //  sortl()
 

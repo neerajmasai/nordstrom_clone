@@ -279,3 +279,10 @@ window.location.href = "../checkout_page/checkout.html";
 }
 /* end */
 loadShoppingCart();
+
+let homeRedirect = document.getElementById("homeRedirect");
+homeRedirect.addEventListener("click", redirectToHome);
+
+function redirectToHome() {
+    window.location.href = "../landing_page/landingPage.html";
+}

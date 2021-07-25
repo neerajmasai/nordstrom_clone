@@ -72,6 +72,9 @@ button:hover{
     padding-right: 0px;
     margin-top: 22px;
 }
+#homeRedirect:hover {
+    cursor: pointer;
+}
 .navList {
     width: 50%;
     height: 80px;
