@@ -31,7 +31,18 @@ Nordstrom is an international Online Shopping Store. We have tried to build the 
         git push origin branch_name
 #### Pulling the changes 
         git pull origin branch_name
-  
+
+## Libraries Used
+1. Colors: 
+      [coolors](https://coolors.co/)
+2. Fonts: 
+      [Google Fonts](https://fonts.google.com/)
+3. Icons:
+      [Flat Icons](https://fontawesome.com/)
+      [Font Awesome](https://fontawesome.com/v4.7/icons/)
+4. Images:
+      [Nordstrom Website](https://www.nordstrom.com/)
+
 ## Core Functionalities
 * Login/Signup
 * Product Page
