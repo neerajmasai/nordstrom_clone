@@ -120,55 +120,89 @@ function shopByMen() {
 
 
 let annSale = document.querySelector("#annSale");
-annSale.addEventListener("mouseover", dropDown);
-annSale.addEventListener("mouseleave", dropDown2);
+annSale.addEventListener("click", dropDown);
+// annSale.addEventListener("mouseleave", dropDown2);
 
 let women = document.getElementById("women");
-women.addEventListener("mouseover", dropDownWomen);
-women.addEventListener("mouseleave", dropDownWomen2);
+women.addEventListener("click", dropDownWomen);
+// women.addEventListener("mouseleave", dropDownWomen2);
 
 let men = document.getElementById("men");
-men.addEventListener("mouseover", dropDownMen);
-men.addEventListener("mouseleave", dropDownMen2);
+men.addEventListener("click", dropDownMen);
+// men.addEventListener("mouseleave", dropDownMen2);
 
 let kids = document.getElementById("kids");
-kids.addEventListener("mouseover", dropDownKids);
-kids.addEventListener("mouseleave", dropDownKids2);
+kids.addEventListener("click", dropDownKids);
+// kids.addEventListener("mouseleave", dropDownKids2);
 
 let activeWear = document.getElementById("activeWear");
-activeWear.addEventListener("mouseover", dropDownWear);
-activeWear.addEventListener("mouseleave", dropDownWear2);
+activeWear.addEventListener("click", dropDownWear);
+// activeWear.addEventListener("mouseleave", dropDownWear2);
 
 let home = document.getElementById("home");
-home.addEventListener("mouseover", dropDownHome);
-home.addEventListener("mouseleave", dropDownHome2);
+home.addEventListener("click", dropDownHome);
+// home.addEventListener("mouseleave", dropDownHome2);
 
 let gifts = document.getElementById("gifts");
-gifts.addEventListener("mouseover", dropDownGifts);
-gifts.addEventListener("mouseleave", dropDownGifts2);
+gifts.addEventListener("click", dropDownGifts);
+// gifts.addEventListener("mouseleave", dropDownGifts2);
 
 let beauty = document.getElementById("beauty");
-beauty.addEventListener("mouseover", dropDownBeauty);
-beauty.addEventListener("mouseleave", dropDownBeauty2);
+beauty.addEventListener("click", dropDownBeauty);
+// beauty.addEventListener("mouseleave", dropDownBeauty2);
 
 let sale = document.getElementById("sale");
-sale.addEventListener("mouseover", dropDownSale);
-sale.addEventListener("mouseleave", dropDownSale2);
+sale.addEventListener("click", dropDownSale);
+// sale.addEventListener("mouseleave", dropDownSale2);
 
 let designer = document.getElementById("designer");
-designer.addEventListener("mouseover", dropDownDesigner);
-designer.addEventListener("mouseleave", dropDownDesigner2);
+designer.addEventListener("click", dropDownDesigner);
+// designer.addEventListener("mouseleave", dropDownDesigner2);
 
 let brand = document.getElementById("brands");
-brand.addEventListener("mouseover", dropDownBrand);
-brand.addEventListener("mouseleave", dropDownBrand2);
+brand.addEventListener("click", dropDownBrand);
+// brand.addEventListener("mouseleave", dropDownBrand2);
+
+let closeDropDown = document.getElementById("closeDropDown");
+closeDropDown.addEventListener("click", leaveDropDown2);
+
+let closeDropDown2 = document.getElementById("closeDropDown2");
+closeDropDown2.addEventListener("click", leaveDropDownWomen2);
+
+let closeDropDown3 = document.getElementById("closeDropDown3");
+closeDropDown3.addEventListener("click", leaveDropDownMen2);
+
+let closeDropDown4 = document.getElementById("closeDropDown4");
+closeDropDown4.addEventListener("click", leaveDropDownKids2);
+
+let closeDropDown5 = document.getElementById("closeDropDown5");
+closeDropDown5.addEventListener("click", leaveDropDownWear2);
+
+let closeDropDown6 = document.getElementById("closeDropDown6");
+closeDropDown6.addEventListener("click", leaveDropDownHome2);
+
+let closeDropDown7 = document.getElementById("closeDropDown7");
+closeDropDown7.addEventListener("click", leaveDropDownGifts2);
+
+let closeDropDown8 = document.getElementById("closeDropDown8");
+closeDropDown8.addEventListener("click", leaveDropDownBeauty2);
+
+let closeDropDown9 = document.getElementById("closeDropDown9");
+closeDropDown9.addEventListener("click", leaveDropDownSale2);
+
+let closeDropDown10 = document.getElementById("closeDropDown10");
+closeDropDown10.addEventListener("click", leaveDropDownBrand2);
+
+let closeDropDown11 = document.getElementById("closeDropDown11");
+closeDropDown11.addEventListener("click", leaveDropDownDesigner2);
+
 
 function dropDown() {
     let dropMainContainer = document.querySelector(".dropMainContainer");
     dropMainContainer.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDown2() {
+function leaveDropDown2() {
     let dropMainContainer = document.querySelector(".dropMainContainer");
     dropMainContainer.style.display = "none";
 }
@@ -178,7 +212,7 @@ function dropDownWomen() {
     dropMainContainer2.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDownWomen2() {
+function leaveDropDownWomen2() {
     let dropMainContainer2 = document.querySelector(".dropMainContainer2");
     dropMainContainer2.style.display = "none";
 }
@@ -188,7 +222,7 @@ function dropDownMen() {
     dropMainContainer3.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDownMen2() {
+function leaveDropDownMen2() {
     let dropMainContainer3 = document.querySelector(".dropMainContainer3");
     dropMainContainer3.style.display = "none";
 }
@@ -198,7 +232,7 @@ function dropDownKids() {
     dropMainContainer4.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDownKids2() {
+function leaveDropDownKids2() {
     let dropMainContainer4 = document.querySelector(".dropMainContainer4");
     dropMainContainer4.style.display = "none";
 }
@@ -208,7 +242,7 @@ function dropDownWear() {
     dropMainContainer5.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDownWear2() {
+function leaveDropDownWear2() {
     let dropMainContainer5 = document.querySelector(".dropMainContainer5");
     dropMainContainer5.style.display = "none";
 }
@@ -218,7 +252,7 @@ function dropDownHome() {
     dropMainContainer6.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDownHome2() {
+function leaveDropDownHome2() {
     let dropMainContainer6 = document.querySelector(".dropMainContainer6");
     dropMainContainer6.style.display = "none";
 }
@@ -228,7 +262,7 @@ function dropDownGifts() {
     dropMainContainer7.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDownGifts2() {
+function leaveDropDownGifts2() {
     let dropMainContainer7 = document.querySelector(".dropMainContainer7");
     dropMainContainer7.style.display = "none";
 }
@@ -238,7 +272,7 @@ function dropDownBeauty() {
     dropMainContainer8.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDownBeauty2() {
+function leaveDropDownBeauty2() {
     let dropMainContainer8 = document.querySelector(".dropMainContainer8");
     dropMainContainer8.style.display = "none";
 }
@@ -248,7 +282,7 @@ function dropDownSale() {
     dropMainContainer9.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDownSale2() {
+function leaveDropDownSale2() {
     let dropMainContainer9 = document.querySelector(".dropMainContainer9");
     dropMainContainer9.style.display = "none";
 }
@@ -258,7 +292,7 @@ function dropDownBrand() {
     dropMainContainer10.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDownBrand2() {
+function leaveDropDownBrand2() {
     let dropMainContainer10 = document.querySelector(".dropMainContainer10");
     dropMainContainer10.style.display = "none";
 }
@@ -268,10 +302,15 @@ function dropDownDesigner() {
     dropMainContainer11.style.display = "inherit";
     // alert("Im dropdown");
 }
-function dropDownDesigner2() {
+function leaveDropDownDesigner2() {
     let dropMainContainer11 = document.querySelector(".dropMainContainer11");
     dropMainContainer11.style.display = "none";
 }
+
+let redirectMenPage = document.getElementById("redirectMenPage");
+redirectMenPage.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
 
 //product dynamic functionality - neeraj
 function productPage(id){
