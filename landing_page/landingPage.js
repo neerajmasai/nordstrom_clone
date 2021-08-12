@@ -312,6 +312,56 @@ redirectMenPage.addEventListener("click", function () {
     window.location.href = "../shop_by_category/shop_Category.html";
 })
 
+let redirectMenPage2 = document.getElementById("redirectMenPage2");
+redirectMenPage2.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
+
+let redirectMenPage3 = document.getElementById("redirectMenPage3");
+redirectMenPage3.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
+
+let redirectMenPage4 = document.getElementById("redirectMenPage4");
+redirectMenPage4.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
+
+let redirectMenPage5 = document.getElementById("redirectMenPage5");
+redirectMenPage5.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
+
+let redirectMenPage6 = document.getElementById("redirectMenPage6");
+redirectMenPage6.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
+
+let redirectMenPage7 = document.getElementById("redirectMenPage7");
+redirectMenPage7.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
+
+let redirectMenPage8 = document.getElementById("redirectMenPage8");
+redirectMenPage8.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
+
+let redirectMenPage9 = document.getElementById("redirectMenPage9");
+redirectMenPage9.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
+
+let redirectMenPage10 = document.getElementById("redirectMenPage10");
+redirectMenPage10.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
+
+let redirectMenPage11 = document.getElementById("redirectMenPage11");
+redirectMenPage11.addEventListener("click", function () {
+    window.location.href = "../shop_by_category/shop_Category.html";
+})
+
 //product dynamic functionality - neeraj
 function productPage(id){
     /* stores id in local storage and updates selected value and redirects to product page*/

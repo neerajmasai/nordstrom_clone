@@ -689,7 +689,8 @@ body {
 #leaveDropDownGifts2:hover, #leaveDropDownHome2:hover, #leaveDropDownBeauty2:hover, #leaveDropDownDesigner2:hover, #leaveDropDownBrand2:hover, #leaveDropDownSale2:hover {
     cursor: pointer;
 }
-#redirectMenPage:hover {
+#redirectMenPage:hover, #redirectMenPage2:hover, #redirectMenPage3:hover, #redirectMenPage4:hover, #redirectMenPage5:hover, #redirectMenPage6:hover, #redirectMenPage7:hover,
+#redirectMenPage8:hover, #redirectMenPage9:hover, #redirectMenPage10:hover, #redirectMenPage11:hover, .hoverHeadings:hover {
     color: red;
     cursor: pointer;
 }
