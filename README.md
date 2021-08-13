@@ -11,7 +11,7 @@ As a part of our build week we were given a problem statement to clone the websi
 4. Sumit Kumar
 
 ## About Project
-Nordstrom is an international Online Shopping Store. We have tried to build the perfect clone of the website.
+Nordstrom is an international Online Shopping Store. Founded in 1901 by John W. Nordstrom and Carl F. Wallin, it originated as a shoe store and evolved into a full-line retailer with departments for clothing, footwear, handbags, jewelry, accessories, cosmetics, and fragrances. As of 2021, Nordstrom operates 100 stores in 32 U.S. states, and three Canadian provinces since entering the market in 2014. One location in Puerto Rico was in operation from 2015 through 2020. We have tried to build the perfect clone of the website.
 
 ## Build With
 * HTML5
@@ -47,23 +47,22 @@ Nordstrom is an international Online Shopping Store. We have tried to build the 
 
 ![This is the landing page of our page](images/landingPage.PNG)
 
-3. This the shop by category page where the user can find all the products related to any particular category like men's category or women's category.
+2. This the shop by category page where the user can find all the products related to any particular category like men's category or women's category.
 
 ![](images/shopByCategory.PNG)
 
-4. In the Product page, the user can see all the details of any particular product he/she selects and there the user can select the size, color or any of the specifications depending on the requirement and add the product in to the shopping bag.
+3. In the Product page, the user can see all the details of any particular product he/she selects and there the user can select the size, color or any of the specifications depending on the requirement and add the product in to the shopping bag.
 
 ![](images/productsPage.PNG)
 
-5. After adding products to the bag, the user can go to the checkout page , where he can see all the prodcuts that are added to the bag and the order summary that include the total cost of the products.
+4. After adding products to the bag, the user can go to the checkout page , where he can see all the prodcuts that are added to the bag and the order summary that include the total cost of the products.
 
 ![](images/checkOut.PNG)
 
-6. This is the payment gateway where the user has to provide the card details and make the payment and place the order.
+5. This is the payment gateway where the user has to provide the card details and make the payment and place the order.
 
 ![](images/payment.PNG)
 
-7. Once the payment is done and the order is successfully placed and it will redirect to the payment process page and after 3 seconds it will redirect the user to the home page of the website.
+6. Once the payment is done and the order is successfully placed and it will redirect to the payment process page and after 3 seconds it will redirect the user to the home page of the website.
 
 ![](images/processing.PNG)
-Also included the responsiveness for some of the pages.
