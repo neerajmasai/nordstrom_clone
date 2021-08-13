@@ -683,6 +683,16 @@ body {
 #women:hover, #annSale:hover, #men:hover, #kids:hover, #home:hover, #gifts:hover, #beauty:hover, 
 #designer:hover, #sale:hover, #brands:hover, #activeWear:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+#leaveDropDown2:hover, #leaveDropDownWomen2:hover, #leaveDropDownMen2:hover, #leaveDropDownKids2:hover, #leaveDropDownWear2:hover,
+#leaveDropDownGifts2:hover, #leaveDropDownHome2:hover, #leaveDropDownBeauty2:hover, #leaveDropDownDesigner2:hover, #leaveDropDownBrand2:hover, #leaveDropDownSale2:hover {
+    cursor: pointer;
+}
+#redirectMenPage:hover, #redirectMenPage2:hover, #redirectMenPage3:hover, #redirectMenPage4:hover, #redirectMenPage5:hover, #redirectMenPage6:hover, #redirectMenPage7:hover,
+#redirectMenPage8:hover, #redirectMenPage9:hover, #redirectMenPage10:hover, #redirectMenPage11:hover, .hoverHeadings:hover {
+    color: red;
+    cursor: pointer;
 }
 .homeShipDiv {
     height: 500px;
